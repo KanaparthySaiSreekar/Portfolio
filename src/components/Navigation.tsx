@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { label: "HOME", path: "/" },
-  { label: "WORK", path: "/work" },
-  { label: "EXPERIENCE", path: "/experience" },
+  { label: "HOME.", path: "/" },
+  { label: "WORK.", path: "/work" },
+  { label: "EXPERIENCE.", path: "/experience" },
 ];
 
 const Navigation = () => {
@@ -30,7 +30,7 @@ const Navigation = () => {
       transition={{ duration: 0.4, delay: 0.5 }}
     >
       <Link to="/" className="font-display text-2xl tracking-wider text-foreground" data-interactive>
-        KASASREE
+        KASASREE.
       </Link>
 
       <div className="flex gap-8">

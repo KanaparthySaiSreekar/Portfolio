@@ -11,8 +11,8 @@ const PerspectiveGrid = () => {
     const worldY = vpY + (1000 - vpY) * Math.pow(t, 1.5);
     const spread = (worldY - vpY) / (1000 - vpY);
     const opacity = 0.05 + spread * 0.17;
-    const x1 = vpX - spread * 600;
-    const x2 = vpX + spread * 600;
+    const x1 = vpX - spread * 1000;
+    const x2 = vpX + spread * 1000;
 
     horizontalLines.push(
       <line
@@ -29,9 +29,9 @@ const PerspectiveGrid = () => {
   }
 
   // Vertical lines fanning from vanishing point
-  for (let i = 0; i < 14; i++) {
-    const t = (i / 13) * 2 - 1; // -1 to 1
-    const bottomX = vpX + t * 600;
+  for (let i = 0; i < 16; i++) {
+    const t = (i / 15) * 2 - 1; // -1 to 1
+    const bottomX = vpX + t * 1000;
     const opacity = 0.08 + Math.abs(t) * 0.12;
 
     verticalLines.push(

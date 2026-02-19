@@ -74,7 +74,7 @@ const Index = () => {
           </p>
 
           <p className="font-display text-foreground text-[clamp(24px,5vw,48px)] tracking-[0.2em] leading-tight">
-            KANAPARTHY SAI SREEKAR
+            KANAPARTHY SAI SREEKAR.
           </p>
         </motion.div>
       </section>
