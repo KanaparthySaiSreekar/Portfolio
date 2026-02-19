@@ -25,7 +25,18 @@ const Index = () => {
         className="relative h-screen flex flex-col items-center justify-center overflow-hidden"
         style={{ scale: heroScale, opacity: heroOpacity }}
       >
+        {/* Black frame border */}
+        <div className="absolute inset-0 border-[5px] border-black z-50 pointer-events-none" />
         <PerspectiveGrid />
+
+        {/* Dot grid */}
+        <div
+          className="absolute inset-0 z-[1] pointer-events-none opacity-[0.08]"
+          style={{
+            backgroundImage: "radial-gradient(circle, #111D13 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
+          }}
+        />
 
         {/* Coordinate labels */}
         <div className="absolute top-16 left-6 font-mono text-[11px] leading-tight text-foreground opacity-[0.08] select-none z-10">
@@ -42,6 +53,15 @@ const Index = () => {
           <div>X: 01.00</div>
           <div>Y: 01.00</div>
           <div>Z: 01.00</div>
+        </div>
+
+        {/* Section label */}
+        <div className="absolute bottom-36 left-14 z-10 select-none pointer-events-none -rotate-90 origin-bottom-left font-mono text-[18px] font-black tracking-[0.3em] uppercase text-foreground opacity-[0.08] leading-tight"
+          style={{ WebkitTextStroke: "1px currentColor" }}
+        >
+          <span>01</span>
+          <br />
+          <span>HERO</span>
         </div>
 
         {/* Hero Typography */}
