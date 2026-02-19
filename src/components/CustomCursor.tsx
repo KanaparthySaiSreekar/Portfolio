@@ -40,7 +40,7 @@ const CustomCursor = () => {
   }, [cursorX, cursorY]);
 
   const scale = isClicking ? 0.7 : isHovering ? 1.25 : 1;
-  const color = isHovering ? "#F05D23" : "#111D13";
+  const color = isHovering ? "#FFFFFF" : "#111D13";
 
   return (
     <motion.div
@@ -49,17 +49,17 @@ const CustomCursor = () => {
       animate={{ scale }}
       transition={{ duration: 0.1 }}
     >
-      <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         {/* Center dot */}
-        <circle cx="8.5" cy="8.5" r="1.5" fill={color} />
+        <circle cx="10" cy="10" r="1.75" fill={color} />
         {/* Top */}
-        <line x1="8.5" y1="0" x2="8.5" y2="5" stroke={color} strokeWidth="1.5" />
+        <line x1="10" y1="0" x2="10" y2="6" stroke={color} strokeWidth="1.5" />
         {/* Bottom */}
-        <line x1="8.5" y1="12" x2="8.5" y2="17" stroke={color} strokeWidth="1.5" />
+        <line x1="10" y1="14" x2="10" y2="20" stroke={color} strokeWidth="1.5" />
         {/* Left */}
-        <line x1="0" y1="8.5" x2="5" y2="8.5" stroke={color} strokeWidth="1.5" />
+        <line x1="0" y1="10" x2="6" y2="10" stroke={color} strokeWidth="1.5" />
         {/* Right */}
-        <line x1="12" y1="8.5" x2="17" y2="8.5" stroke={color} strokeWidth="1.5" />
+        <line x1="14" y1="10" x2="20" y2="10" stroke={color} strokeWidth="1.5" />
       </svg>
     </motion.div>
   );
