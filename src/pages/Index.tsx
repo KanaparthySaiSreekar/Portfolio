@@ -27,6 +27,23 @@ const Index = () => {
       >
         <PerspectiveGrid />
 
+        {/* Coordinate labels */}
+        <div className="absolute top-16 left-6 font-mono text-[11px] leading-tight text-foreground opacity-[0.08] select-none z-10">
+          <div>X: 00.00</div>
+          <div>Y: 00.00</div>
+          <div>Z: 01.00</div>
+        </div>
+        <div className="absolute top-6 right-60 font-mono text-[11px] leading-tight text-foreground opacity-[0.08] select-none z-10 text-right">
+          <div>X: 01.00</div>
+          <div>Y: 00.00</div>
+          <div>Z: 01.00</div>
+        </div>
+        <div className="absolute bottom-36 right-6 font-mono text-[11px] leading-tight text-foreground opacity-[0.08] select-none z-10 text-right">
+          <div>X: 01.00</div>
+          <div>Y: 01.00</div>
+          <div>Z: 01.00</div>
+        </div>
+
         {/* Hero Typography */}
         <div className="relative z-10 flex flex-col items-center w-full px-4">
           <div className="w-full flex justify-center">
