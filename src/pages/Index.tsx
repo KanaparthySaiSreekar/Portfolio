@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
 import PerspectiveGrid from "@/components/PerspectiveGrid";
 import FlipText from "@/components/FlipText";
 import Marquee from "@/components/Marquee";
@@ -35,7 +34,7 @@ const Index = () => {
               text="FORGE."
               frontColor="#111D13"
               backColor="#FFFFFF"
-              className="font-display text-[clamp(80px,18vw,200px)] leading-[0.9] tracking-[0.05em]"
+              className="font-display text-[clamp(80px,18vw,3000px)] leading-[0.9] tracking-[0.05em]"
             />
           </div>
           <div className="w-full flex justify-center">
@@ -43,7 +42,7 @@ const Index = () => {
               text="OUTCOME."
               frontColor="#FFFFFF"
               backColor="#111D13"
-              className="font-display text-[clamp(80px,18vw,200px)] leading-[0.9] tracking-[0.05em]"
+              className="font-display text-[clamp(80px,18vw,3000px)] leading-[0.9] tracking-[0.05em]"
             />
           </div>
 
@@ -74,30 +73,9 @@ const Index = () => {
             MEASURED OUTCOMES.
           </p>
 
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Link to="/work">
-              <motion.button
-                className="px-8 py-4 bg-primary text-primary-foreground font-display text-sm tracking-[0.2em] rounded-lg"
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ duration: 0.18 }}
-                data-interactive
-              >
-                PROJECTS
-              </motion.button>
-            </Link>
-            <Link to="/experience">
-              <motion.button
-                className="px-8 py-4 bg-transparent border-2 border-foreground text-foreground font-display text-sm tracking-[0.2em] rounded-lg transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ duration: 0.18 }}
-                data-interactive
-              >
-                EXPERIENCE
-              </motion.button>
-            </Link>
-          </div>
+          <p className="font-display text-foreground text-[clamp(24px,5vw,48px)] tracking-[0.2em] leading-tight">
+            KANAPARTHY SAI SREEKAR
+          </p>
         </motion.div>
       </section>
 

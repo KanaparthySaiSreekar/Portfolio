@@ -2,10 +2,10 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
 const metrics = [
-  { value: 50, suffix: "K+", label: "REQUESTS / SEC" },
-  { value: 200, suffix: "+", label: "MODELS DEPLOYED" },
-  { value: 99.9, suffix: "%", label: "UPTIME SLA" },
-  { value: 2, suffix: "M+", label: "EVENTS / MIN" },
+  { value: 1, suffix: "+", label: "YEARS BUILDING" },
+  { value: 3, suffix: "+", label: "AGENT SYSTEMS" },
+  { value: 100, suffix: "%", label: "FULL STACK" },
+  { value: 1, suffix: "", label: "PRODUCT SHIPPED" },
 ];
 
 const CountUp = ({ target, suffix }: { target: number; suffix: string }) => {
@@ -35,37 +35,16 @@ const CountUp = ({ target, suffix }: { target: number; suffix: string }) => {
 
 const experiences = [
   {
-    role: "SENIOR ML ENGINEER",
-    company: "ENTERPRISE AI CORP",
-    period: "2022 — PRESENT",
+    role: "PRODUCT ENGINEER",
+    company: "AIDEN AI",
+    period: "2025 — PRESENT",
     responsibilities: [
-      "Architected distributed inference pipeline serving 50K+ req/s",
-      "Led team of 8 engineers building autonomous agent framework",
-      "Reduced model deployment time from 2 weeks to 4 hours",
+      "Full-stack engineering across the product, owning features end-to-end from design to deployment",
+      "Built and fine-tuned AI/ML models powering core platform intelligence",
+      "Designed and developed multi-agent systems as part of the product's solution architecture",
+      "Bridged product thinking with deep technical execution across the entire stack",
     ],
-    impact: "3x throughput improvement, $2.4M annual cost reduction",
-  },
-  {
-    role: "SOFTWARE ARCHITECT",
-    company: "CLOUD SYSTEMS INC",
-    period: "2020 — 2022",
-    responsibilities: [
-      "Designed event-driven data platform processing 2M+ events/min",
-      "Built zero-downtime API gateway with intelligent rate limiting",
-      "Implemented real-time monitoring across 200+ microservices",
-    ],
-    impact: "Sub-10ms p99 latency, 99.99% availability",
-  },
-  {
-    role: "BACKEND ENGINEER",
-    company: "STARTUP LABS",
-    period: "2018 — 2020",
-    responsibilities: [
-      "Built core platform serving 1M+ daily active users",
-      "Implemented CI/CD pipeline reducing deployment failures by 90%",
-      "Designed database schema supporting multi-tenant architecture",
-    ],
-    impact: "10x user growth with zero architecture rewrites",
+    impact: "End-to-end ownership of AI-driven product features from prototype to production",
   },
 ];
 
@@ -89,7 +68,7 @@ const Experience = () => {
         animate={{ opacity: 0.7, y: 0 }}
         transition={{ duration: 0.3, delay: 0.2 }}
       >
-        Systems built. Problems solved. Scale achieved.
+        SYSTEMS BUILT. PROBLEMS SOLVED. SCALE ACHIEVED.
       </motion.p>
 
       {/* Metrics */}
