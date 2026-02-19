@@ -7,21 +7,21 @@ const PageTransition = ({ children }: { children: ReactNode }) => {
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div key={location.pathname}>
-        {/* White wipe overlay */}
+      <motion.div key={location.pathname} className="relative">
+        {/* Sliding overlay */}
         <motion.div
-          className="fixed inset-0 z-[200] bg-secondary"
-          initial={{ scaleX: 1 }}
-          animate={{ scaleX: 0 }}
-          exit={{ scaleX: 1 }}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          style={{ transformOrigin: "right" }}
+          className="fixed top-0 left-0 w-full h-full z-[200] bg-secondary"
+          initial={{ x: "0%" }}
+          animate={{ x: "100%" }}
+          exit={{ x: "0%" }}
+          transition={{ duration: 0.5, ease: [0.83, 0, 0.17, 1] }}
         />
+
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.3, delay: 0.2 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           {children}
         </motion.div>
