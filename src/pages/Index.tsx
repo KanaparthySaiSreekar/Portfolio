@@ -68,10 +68,10 @@ const Index = () => {
           transition={{ duration: 0.4 }}
         >
           <p className="font-mono text-foreground text-lg leading-relaxed mb-4">
-            I design intelligent systems that scale.
+            DEFINED PROBLEMS.
           </p>
           <p className="font-mono text-foreground text-lg leading-relaxed mb-12">
-            I build architecture that thinks.
+            MEASURED OUTCOMES.
           </p>
 
           <div className="flex gap-4 justify-center flex-wrap">
@@ -83,7 +83,7 @@ const Index = () => {
                 transition={{ duration: 0.18 }}
                 data-interactive
               >
-                VIEW WORK
+                PROJECTS
               </motion.button>
             </Link>
             <Link to="/experience">
@@ -94,7 +94,7 @@ const Index = () => {
                 transition={{ duration: 0.18 }}
                 data-interactive
               >
-                EXPLORE THINKING
+                EXPERIENCE
               </motion.button>
             </Link>
           </div>
